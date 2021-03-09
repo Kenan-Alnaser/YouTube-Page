@@ -43,18 +43,38 @@ a {
   box-shadow: 0 0.2rem 0.2rem rgba(17, 17, 17, 0.2);
   z-index: 1;
 }
-.logo {
-  flex: 0 0 15rem;
-  margin-left: 2.5rem;
+.logo h1 {
+  font-family: "Oswald", Arial, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: -0.12rem;
+  color: #282828;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.logo-icon {
+  color: #f00;
+  padding-right: 0.5rem;
 }
 
 .site-search {
-  flex-grow: 1;
-  margin: 0 2.5rem;
+  display: flex;
+  height: 3.2rem;
 }
 
-.menu-btn {
-  font-size: 1.6rem;
-  color: #888;
-  padding: 0 0.5rem;
+.search-input,
+.search-btn {
+  border: 0.1rem solid #ccc;
+}
+
+.search-input {
+  flex-basis: 60rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+  border-right: none;
+  padding-left: 1rem;
+  color: var(--black-text);
 }
