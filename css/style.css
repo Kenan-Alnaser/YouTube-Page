@@ -78,3 +78,26 @@ a {
   padding-left: 1rem;
   color: var(--black-text);
 }
+.search-btn {
+  flex: 0 0 6.5rem;
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
+  background-color: #f8f8f8;
+  color: var(--black-text);
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.user-menu {
+  flex-basis: 16rem;
+  display: flex;
+  font-size: 1.6rem;
+  color: var(--grey-text);
+}
+
+.user-menu .btn {
+  flex: 0 0 4rem;
+}
