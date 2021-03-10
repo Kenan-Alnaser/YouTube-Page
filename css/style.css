@@ -43,6 +43,23 @@ a {
   box-shadow: 0 0.2rem 0.2rem rgba(17, 17, 17, 0.2);
   z-index: 1;
 }
+.logo {
+  flex: 0 0 15rem;
+  margin-left: 2.5rem;
+}
+
+.site-search {
+  flex-grow: 1;
+  margin: 0 2.5rem;
+  display: flex;
+  height: 3.2rem;
+}
+.menu-btn {
+  font-size: 1.6rem;
+  color: #888;
+  padding: 0 0.5rem;
+}
+
 .logo h1 {
   font-family: "Oswald", Arial, sans-serif;
   font-size: 2.2rem;
@@ -56,11 +73,6 @@ a {
 .logo-icon {
   color: #f00;
   padding-right: 0.5rem;
-}
-
-.site-search {
-  display: flex;
-  height: 3.2rem;
 }
 
 .search-input,
@@ -92,10 +104,6 @@ a {
   color: var(--grey-text);
 }
 
-.menu-btn {
-  color: white;
-  padding: 1rem;
-}
 .user-menu .btn {
   flex: 0 0 4rem;
 }
