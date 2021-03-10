@@ -101,3 +101,49 @@ a {
 .user-menu .btn {
   flex: 0 0 4rem;
 }
+.channel-banner {
+  flex-basis: 16vw;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  background: url(../img/banner.jpg) no-repeat center 35%;
+  background-size: cover;
+  padding: 1.6rem;
+}
+
+.channel-social-links {
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.channel-social-links li {
+  display: inline-block;
+  font-size: 1.8rem;
+  padding-right: 1rem;
+}
+
+.channel-social-links li:last-of-type {
+  padding-right: 0;
+}
+
+.facebook {
+  color: #3b5999;
+}
+
+.twitter {
+  color: #1da1f3;
+}
+
+.instagram {
+  border-radius: 40px;
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+}
