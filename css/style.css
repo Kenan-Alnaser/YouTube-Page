@@ -7,6 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Roboto", Arial, sans-serif;
+  background-color: #0c0b0b;
 }
 
 a {
@@ -38,7 +39,7 @@ a {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: #fff;
+  background-color: #202020;
   padding: 0 2.2rem;
   box-shadow: 0 0.2rem 0.2rem rgba(17, 17, 17, 0.2);
   z-index: 1;
@@ -76,19 +77,13 @@ a {
   border-bottom-left-radius: 0.3rem;
   border-right: none;
   padding-left: 1rem;
-  color: var(--black-text);
 }
 .search-btn {
   flex: 0 0 6.5rem;
   border-top-right-radius: 0.3rem;
   border-bottom-right-radius: 0.3rem;
-  background-color: #f8f8f8;
-  color: var(--black-text);
+  background-color: rgba(68, 65, 65, 0.822);
   cursor: pointer;
-}
-
-.search-btn:hover {
-  background-color: #f0f0f0;
 }
 
 .user-menu {
@@ -148,7 +143,7 @@ a {
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
 }
 .channel-info {
-  background-color: #fafafa;
+  background-color: #1d1c1c;
   padding-top: 1.6rem;
 }
 
@@ -167,6 +162,7 @@ a {
 .channel-title {
   flex: 1 1 auto;
   margin: 0 2rem;
+  color: white;
 }
 
 .channel-title h1 {
