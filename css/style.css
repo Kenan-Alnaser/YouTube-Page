@@ -36,7 +36,6 @@ a {
   display: flex;
   flex-basis: 5.6rem;
   align-items: center;
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: #202020;
@@ -49,7 +48,7 @@ a {
   font-size: 2.2rem;
   font-weight: 600;
   letter-spacing: -0.12rem;
-  color: #282828;
+  color: white;
   white-space: nowrap;
   cursor: pointer;
 }
@@ -93,6 +92,10 @@ a {
   color: var(--grey-text);
 }
 
+.menu-btn {
+  color: white;
+  padding: 1rem;
+}
 .user-menu .btn {
   flex: 0 0 4rem;
 }
@@ -264,4 +267,30 @@ aside > section > ul:hover > {
   font-weight: 500;
   background-color: red;
   margin-right: 0.4rem;
+}
+.channel-nav {
+  background-color: #1d1c1c;
+  padding-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow-x: auto;
+  color: rgb(146, 146, 146);
+}
+
+.channel-nav ul {
+  display: flex;
+}
+
+.nav-item a {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--grey-text);
+  padding: 1.5rem 3.2rem;
+}
+
+.nav-item a.current {
+  color: var(--black-text);
+  border-bottom: 0.3rem solid #6e6e6e;
 }
