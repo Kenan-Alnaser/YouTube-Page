@@ -343,3 +343,38 @@ img {
   width: 15vw;
   height: 15vh;
 }
+
+.playlist {
+  position: relative;
+  padding-bottom: 1rem;
+  overflow-x: auto;
+  margin-top: 2rem;
+}
+
+.playlist-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  position: sticky;
+  left: 0;
+  padding: 2rem 0;
+}
+
+.playlist-videos {
+  display: flex;
+}
+
+.playlist-video {
+  flex-basis: 21rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.playlist-video .video-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+}
+
+.playlist-video .video-creator {
+  display: block;
+}
