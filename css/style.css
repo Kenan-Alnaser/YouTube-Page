@@ -101,7 +101,6 @@ a {
   flex-basis: 16rem;
   display: flex;
   font-size: 1.6rem;
-  color: var(--grey-text);
 }
 
 .user-menu .btn {
@@ -248,15 +247,11 @@ aside > section > ul {
   border-width: 0;
   background-color: #202020;
 }
-aside > section > ul:hover {
+
+.sideButton:hover {
   background-color: grey;
 }
-aside > section > ul:hover > .sideButton {
-  background-color: grey;
-}
-aside > section > ul:hover > {
-  background-color: grey;
-}
+
 .channel-subscriber-count {
   font-size: 1.4rem;
   font-weight: 400;
@@ -280,7 +275,6 @@ aside > section > ul:hover > {
   background-color: #1d1c1c;
   padding-bottom: 0.5rem;
   white-space: nowrap;
-  overflow-x: auto;
   color: rgb(146, 146, 146);
 }
 
@@ -294,14 +288,10 @@ aside > section > ul:hover > {
   font-weight: 500;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--grey-text);
+  color: grey;
   padding: 1.5rem 3.2rem;
 }
 
-.nav-item a.current {
-  color: var(--black-text);
-  border-bottom: 0.3rem solid #6e6e6e;
-}
 .channel-content .container {
   display: flex;
   padding-top: 2.4rem;
@@ -326,11 +316,6 @@ aside > section > ul:hover > {
   font-weight: 400;
 }
 
-.video-description {
-  max-width: 60rem;
-  line-height: 1.4;
-}
-
 .video-meta-data li {
   display: inline-block;
 }
@@ -340,7 +325,6 @@ aside > section > ul:hover > {
 }
 
 .video-views::after {
-  content: "\00B7";
   font-size: 2.2rem;
   padding-left: 0.4rem;
   vertical-align: middle;
