@@ -10,7 +10,7 @@
   </head>
   <body>
     <header class="head-section">
-      <button class="menu-btn btn">
+      <button class="menu-btn btn hamburger">
         <i class="fas fa-bars"></i>
       </button>
 
@@ -102,7 +102,7 @@
       </div>
     </nav>
     <main class="channel-content">
-      <aside>
+      <aside class="side-menu">
         <section id="aside-top-section">
             <table>
             <ul> <button class="sideButton">Home</button></ul>
@@ -284,5 +284,17 @@
         </div>
 </section>
 </div>
+<script>
+  let clicked = false;
+  document.querySelector('.menu-btn').addEventListener("click",()=>{
+  clicked= !clicked;
+      console.log(clicked);
+      if(clicked){
+          document.querySelector('aside').style.cssText = "display: block; position: fixed;left:0;z-index: 1; opacity: 0.9;"
+      } else{
+          document.querySelector('aside').style.cssText = "display: none;"
+      }
+  })
+</script>
   </body>
 </html>
