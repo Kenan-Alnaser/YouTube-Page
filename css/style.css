@@ -58,8 +58,21 @@ a {
   font-size: 1.6rem;
   color: #888;
   padding: 0 0.5rem;
+  width: 4rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  position: relative;
+  border-radius: 30%;
 }
-
+.line {
+  width: 2.5rem;
+  height: 0.2rem;
+  background-color: white;
+  border-radius: 25%;
+}
 .logo h1 {
   font-family: "Oswald", Arial, sans-serif;
   font-size: 2.2rem;
@@ -369,4 +382,13 @@ img {
 
 .playlist-video .video-creator {
   display: block;
+}
+@keyframes move-right {
+  from {
+    left: 0;
+    transform: scale(1);
+  }
+  to {
+    left: 4vw;
+  }
 }

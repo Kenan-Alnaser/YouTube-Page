@@ -10,9 +10,11 @@
   </head>
   <body>
     <header class="head-section">
-      <button class="menu-btn btn hamburger">
-        <i class="fas fa-bars"></i>
-      </button>
+      <div class="menu-btn btn hamburger">
+        <div class="line x-1"></div>
+        <div class="line x-2"></div>
+        <div class="line x-3"></div>
+      </div>
 
       <div class="logo">
         <a href="#">
@@ -291,8 +293,14 @@
       console.log(clicked);
       if(clicked){
           document.querySelector('aside').style.cssText = "display: block; position: fixed;left:0;z-index: 1; opacity: 0.9;"
+          document.querySelector('.x-1').style.cssText = "  transform: rotate(-0.15turn); transition: 1s ease; position: absolute;"
+          document.querySelector('.x-2').style.cssText = "  position: absolute; animation-name: move-right; animation-iteration-count: 1; animation-duration: 1s; transform: scale(0);"
+          document.querySelector('.x-3').style.cssText = "  transform: rotate(0.15turn); transition: 1s ease; position: absolute;"
       } else{
           document.querySelector('aside').style.cssText = "display: none;"
+          document.querySelector('.x-1').style.cssText = " "
+          document.querySelector('.x-2').style.cssText = "  position: absolute; transform: scale(1);"
+          document.querySelector('.x-3').style.cssText = " "
       }
   })
 </script>
