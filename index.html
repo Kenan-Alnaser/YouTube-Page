@@ -314,12 +314,27 @@
 </script>
 <script>
   const theme = () => {
+  const vTitles = document.querySelectorAll(".video-title");
   const mode = document.querySelector("#light-dark").checked;
+  info = document.querySelector(".channel-info").style;
+  head = document.querySelector(".head-section").style;
   body = document.querySelector("body").style;
-  console.log(mode);
+  nav = document.querySelector(".channel-nav").style;
   if (mode) {
+    vTitles.forEach((h3) => {
+  h3.style.color = "white";
+});
+    info.backgroundColor = "#1d1c1c";
+    nav.backgroundColor = "#1d1c1c";
+    head.backgroundColor = "#202020";
     body.backgroundColor = "#0c0b0b";
   } else {
+    vTitles.forEach((h3) => {
+  h3.style.color = "black";
+});
+    info.backgroundColor = "white";
+    nav.backgroundColor = "white";
+    head.backgroundColor = "white";
     body.backgroundColor = "white";
   }
 };
