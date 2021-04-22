@@ -1,0 +1,20 @@
+.site-search {
+  flex-grow: 1;
+  margin: 0 2.5rem;
+  display: flex;
+  height: 3.2rem;
+}
+.search-input,
+.search-btn {
+  border: 0.1rem solid #ccc;
+}
+
+.search-input {
+  flex-basis: 60rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+  border-right: none;
+  padding-left: 1rem;
+}

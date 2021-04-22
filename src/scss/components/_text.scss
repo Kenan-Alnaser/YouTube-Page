@@ -1,0 +1,70 @@
+.channel-title {
+  flex: 1 1 auto;
+  margin: 0 2rem;
+  color: white;
+}
+
+.channel-title h1 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.channel-subscriber-count {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+.video-title {
+  color: white;
+}
+
+.video-meta-data,
+.video-description {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.video-meta-data li {
+  display: inline-block;
+}
+
+.video-creator {
+  padding-right: 0.4rem;
+}
+
+.video-views::after {
+  font-size: 2.2rem;
+  padding-left: 0.4rem;
+  vertical-align: middle;
+}
+
+.playlist-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  position: sticky;
+  left: 0;
+  padding: 2rem 0;
+}
+
+.playlist-video .video-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+}
+
+.playlist-video .video-creator {
+  display: block;
+}
+
+.channel-info {
+  background-color: #1d1c1c;
+  padding-top: 1.6rem;
+}
+
+.channel-subscribe {
+  display: flex;
+  height: 3.7rem;
+  color: white;
+}
