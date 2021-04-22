@@ -10,6 +10,11 @@ a {
   display: inline-block;
   text-decoration: none;
 }
+.user-menu {
+  flex-basis: 16rem;
+  display: flex;
+  font-size: 1.6rem;
+}
 
 .user-menu .btn {
   flex: 0 0 4rem;
