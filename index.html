@@ -21,10 +21,11 @@
           <h1><i class="fab fa-youtube logo-icon"></i>YouTube</h1>
         </a>
       </div>
+      <!-- checkbox slider -->
       <section class="toggle">
         <label class="toggle-lable">Dark Mode</label>
         <label class="switch">
-          <input type="checkbox" name="moreInfo" />
+          <input type="checkbox" onchange="theme()" name="mode" id="light-dark" />
           <span class="slider"></span>
         </label>
       </section>
@@ -310,6 +311,18 @@
           document.querySelector('.x-3').style.cssText = " "
       }
   })
+</script>
+<script>
+  const theme = () => {
+  const mode = document.querySelector("#light-dark").checked;
+  body = document.querySelector("body").style;
+  console.log(mode);
+  if (mode) {
+    body.backgroundColor = "#0c0b0b";
+  } else {
+    body.backgroundColor = "white";
+  }
+};
 </script>
   </body>
 </html>
