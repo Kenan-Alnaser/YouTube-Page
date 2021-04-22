@@ -31,6 +31,8 @@ const theme = () => {
   const head = document.querySelector(".head-section").style;
   const body = document.querySelector("body").style;
   const nav = document.querySelector(".channel-nav").style;
+  const side = document.querySelector("aside").style;
+  const sideBtn = document.querySelectorAll(".sideButton");
   if (mode) {
     vTitles.forEach((h3) => {
       h3.style.color = "white";
@@ -38,11 +40,16 @@ const theme = () => {
     headers.forEach((h1) => {
       h1.style.color = "white";
     });
+    sideBtn.forEach((button) => {
+      button.style.backgroundColor = "#202020";
+      button.style.color = "white";
+    });
     subCount.color = "white";
     info.backgroundColor = "#1d1c1c";
     nav.backgroundColor = "#1d1c1c";
     head.backgroundColor = "#202020";
     body.backgroundColor = "#0c0b0b";
+    side.backgroundColor = "#202020";
   } else {
     vTitles.forEach((h3) => {
       h3.style.color = "black";
@@ -50,10 +57,16 @@ const theme = () => {
     headers.forEach((h1) => {
       h1.style.color = "black";
     });
+    sideBtn.forEach((button) => {
+      button.style.backgroundColor = "white";
+      button.style.color = "black";
+    });
     subCount.color = "black";
     info.backgroundColor = "white";
     nav.backgroundColor = "white";
     head.backgroundColor = "white";
     body.backgroundColor = "#e3e3e3";
+    side.backgroundColor = "white";
+    sideBtn.backgroundColor = "white";
   }
 };
