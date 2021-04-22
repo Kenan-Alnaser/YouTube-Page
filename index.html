@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="head-section">
+      <div class="menu-btn btn hamburger">
+        <div class="line x-1"></div>
+        <div class="line x-2"></div>
+        <div class="line x-3"></div>
+      </div>
+
+      <div class="logo">
+        <a href="#">
+          <h1><i class="fab fa-youtube logo-icon"></i>YouTube</h1>
+        </a>
+      </div>
+      <!-- checkbox slider -->
+      <section class="toggle">
+        <label class="toggle-lable light">Light</label>
+        <label class="toggle-lable dark"> Dark</label>
+        <label class="switch">
+          <input type="checkbox" onchange="theme()" name="mode" id="light-dark" checked/>
+          <span class="slider"></span>
+        </label>
+      </section>
+
+      <div class="site-search">
+        <input type="search" placeholder="Search" class="search-input"/>
+        <button class="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+
+      <div class="user-menu">
+        <button class="btn">
+          <i class="fas fa-upload"></i>
+        </button>
+
+        <button class="btn">
+          <i class="fas fa-th"></i>
+        </button>
+
+        <button class="btn">
+          <i class="fas fa-user-circle"></i>
+        </button>
+      </div>
+    </header>
+    <section class="channel-banner">
+      <div class="channel-social-links">
+        <ul>
+          <li class="btn facebook">
+            <i class="fab fa-facebook-square"></i>
+          </li>
+
+          <li class="btn twitter">
+            <i class="fab fa-twitter-square"></i>
+          </li>
+          <li class="btn instagram">
+            <i class="fab fa-instagram-square"></i>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="channel-info">
+      <div class="container">
+        <div class="channel-icon"><img src=./img/logo.jpeg alt="" /></div>
+
+        <div class="channel-title">
+          <h1>Cool Person <i class="fas fa-check-circle"></i></h1>
+
+          <div class="channel-subscriber-count">13.9M subscribers</div>
+        </div>
+
+        <div class="channel-subscribe">
+          <button class="subscribe-btn btn">Subscribe</button>
+        </div>
+      </div>
+    </section>
+    <nav class="channel-nav">
+      <div class="container">
+        <ul>
+          <li class="nav-item">
+            <a href="#" class="current">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#">Videos</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#">Playlists</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#">Community</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#">Channels</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="channel-content">
+      <aside class="side-menu">
+        <section id="aside-top-section">
+            <table>
+            <ul> <button class="sideButton">Home</button></ul>
+            <ul> <button class="sideButton">Trending</button></ul>
+            <ul> <button class="sideButton">Subscriptions</button></ul>
+        </table>
+        </section>
+        <section id="aside-mid-section">
+            <table>
+                <ul> <button class="sideButton">Library</button></ul>
+                <ul> <button class="sideButton">History</button></ul>
+                <ul> <button class="sideButton">Your videos</button></ul>
+                <ul> <button class="sideButton">Watch later</button></ul>
+                <ul> <button class="sideButton">Favorites</button></ul>
+                <ul> <button class="sideButton">Show more</button></ul>
+        </table>
+        </section>
+        <section id="aside-bottom-section">
+            <table>
+                <ul> <button class="sideButton">DW documentary</button></ul>
+                <ul> <button class="sideButton">Tagesshow</button></ul>
+                <ul> <button class="sideButton">Pro Home Cooks</button></ul>
+                <ul> <button class="sideButton">Karl Conrad</button></ul>
+                <ul> <button class="sideButton">Marques Brownlee</button></ul>
+                <ul> <button class="sideButton">Business Insider</button></ul>
+                <ul> <button class="sideButton">Tasty</button></ul>
+                <ul> <button class="sideButton">Show 112 more</button></ul>
+        </table>
+        </section>
+    </aside>
+
+        <div class="container">
+            <section class="channel-videos">
+
+        <div class="playlist">
+
+            <h2 class="playlist-title">Uploads</h2>
+
+            <div class="playlist-videos">
+
+                <div class="playlist-video" tabindex="0">
+
+                    <div class="video-thumbnail">
+                        <img src="./img/vid8.jpg" alt="">
+                    </div>
+
+                    <div class="video-info">
+                        <h3 class="video-title">Video 8</h3>
+                        <ul class="video-meta-data">
+                            <li class="video-creator">Cool Person <i class="fas fa-check-circle"></i></li>
+                            <li class="video-views">252K views</li>
+                            <li class="video-upload-date">1 day ago</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="playlist-video" tabindex="0">
+
+                    <div class="video-thumbnail">
+                        <img src="./img/vid7.jpg" alt="">
+                    </div>
+
+                    <div class="video-info">
+                        <h3 class="video-title">Video 7</h3>
+                        <ul class="video-meta-data">
+                            <li class="video-creator">Cool Person <i class="fas fa-check-circle"></i></li>
+                            <li class="video-views">376K views</li>
+                            <li class="video-upload-date">4 days ago</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="playlist-video" tabindex="0">
+
+                    <div class="video-thumbnail">
+                        <img src="./img/vid6.jpeg" alt="">
+                    </div>
+
+                    <div class="video-info">
+                        <h3 class="video-title">Video 6</h3>
+                        <ul class="video-meta-data">
+                            <li class="video-creator">Cool Person <i class="fas fa-check-circle"></i></li>
+                            <li class="video-views">441K views</li>
+                            <li class="video-upload-date">1 week ago</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="playlist-video" tabindex="0">
+
+                    <div class="video-thumbnail">
+                        <img src="./img/vid5.jpg" alt="">
+                    </div>
+
+                    <div class="video-info">
+                        <h3 class="video-title">Video 5</h3>
+                        <ul class="video-meta-data">
+                            <li class="video-creator">Cool Person <i class="fas fa-check-circle"></i></li>
+                            <li class="video-views">564K views</li>
+                            <li class="video-upload-date">1 week ago</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="playlist-video" tabindex="0">
+
+                    <div class="video-thumbnail">
+                        <img src="./img/vid4.jpg" alt="">
+                    </div>
+
+                    <div class="video-info">
+                        <h3 class="video-title">Video 4</h3>
+                        <ul class="video-meta-data">
+                            <li class="video-creator">Cool Person <i class="fas fa-check-circle"></i></li>
+                            <li class="video-views">689K views</li>
+                            <li class="video-upload-date">2 weeks ago</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="playlist-video" tabindex="0">
+
+                    <div class="video-thumbnail">
+                        <img src="./img/vid3.png" alt="">
+                    </div>
+
+                    <div class="video-info">
+                        <h3 class="video-title">Video 3</h3>
+                        <ul class="video-meta-data">
+                            <li class="video-creator">Cool Person <i class="fas fa-check-circle"></i></li>
+                            <li class="video-views">763K views</li>
+                            <li class="video-upload-date">2 weeks ago</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="playlist-video" tabindex="0">
+
+                    <div class="video-thumbnail">
+                        <img src="./img/vid2.cms" alt="">
+                    </div>
+
+                    <div class="video-info">
+                        <h3 class="video-title">Video 2</h3>
+                        <ul class="video-meta-data">
+                            <li class="video-creator">Cool Person <i class="fas fa-check-circle"></i></li>
+                            <li class="video-views">824K views</li>
+                            <li class="video-upload-date">3 weeks ago</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="playlist-video" tabindex="0">
+
+                    <div class="video-thumbnail">
+                        <img src="./img/vid1.jpg" alt="">
+                    </div>
+
+                    <div class="video-info">
+                        <h3 class="video-title">Video 1</h3>
+                        <ul class="video-meta-data">
+                            <li class="video-creator">Cool Person <i class="fas fa-check-circle"></i></li>
+                            <li class="video-views">1.1M views</li>
+                            <li class="video-upload-date">1 month ago</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+</section>
+</div>
+<script src="./JS/index.js"></script>
+  </body>
+</html>
